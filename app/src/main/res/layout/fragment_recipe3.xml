@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Recipe3">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+                <ImageView
+                    android:id="@+id/recipe1_back_btn"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lasagna "
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="80dp"
+                    android:fontFamily="@font/poppins_medium"/>
+            </LinearLayout>
+            <View
+                android:layout_width="420dp"
+                android:layout_height="1.5dp"
+                android:layout_gravity="center"
+                android:background="#C6C6C6"
+                android:layout_marginTop="5dp"/>
+
+            <include layout="@layout/recipe__video"
+                android:id="@+id/recipe1_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"/>
+            <include layout="@layout/lasagna_ingredients" />
+            <include layout="@layout/lasagna_recipe_steps"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Directions"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+
+
+            <TextView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/steps"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:text="Step 1: \n\nCook sausage, ground beef, onion, and garlic in a Dutch oven over medium heat until well browned. Stir in crushed tomatoes, tomato sauce, tomato paste, and water."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="46dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/steps"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:text="Step 2: \n\nBring a large pot of lightly salted water to a boil. Cook lasagna noodles in boiling water for 8 to 10 minutes. Drain noodles, and rinse with cold water. In a mixing bowl, combine ricotta cheese with egg, remaining 2 tablespoons parsley, and 1/2 teaspoon salt."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="46dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/steps"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:text="Step 3: \n\n Preheat the oven to 375 degrees F (190 degrees C)."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="46dp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</FrameLayout>

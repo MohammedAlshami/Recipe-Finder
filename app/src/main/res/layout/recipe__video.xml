@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp"
+>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="290dp"
+        app:cardBackgroundColor="@color/shorts_bg"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/steps"
+        android:elevation="10dp">
+
+        <ImageButton
+            android:id="@+id/recipe_playbtn"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/ic_baseline_play_arrow_24"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:visibility="visible"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:focusable="true"
+            android:contentDescription="@string/just_a_button" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/videoCard"
+            android:layout_width="355dp"
+            android:layout_height="275dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp">
+
+                <VideoView
+                    android:id="@+id/Recipe_Video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.Home">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bg_style"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginRight="-260dp"
+            android:src="@drawable/background_style"
+            android:visibility="visible"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/home_search_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/searchBarBtn"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="30dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                        android:visibility="gone"/>
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchfun"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/box_shadow"
+                        android:elevation="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@null"
+                        app:queryHint="what are you craving?" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/home_search_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+                    <include
+                        android:id="@+id/searchOptions"
+                        layout="@layout/search_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/userList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/home_components"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Shorts"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="370dp"
+                        android:layout_height="290dp"
+                        android:background="@drawable/steps"
+                        android:elevation="10dp"
+                        app:cardBackgroundColor="@color/shorts_bg"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/HomeCardVid1"
+                                android:layout_width="174dp"
+                                android:layout_height="275dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/clickable"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:cardCornerRadius="10dp">
+
+                                <VideoView
+                                    android:id="@+id/HomeVid1"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingTop="-10dp"
+                                    android:paddingBottom="-10dp"
+                                    android:focusableInTouchMode="false"
+                                    />
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/HomeCardVid2"
+                                    android:layout_width="174dp"
+                                    android:layout_height="136dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/clickable"
+
+                                    app:cardCornerRadius="10dp">
+
+                                    <VideoView
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentRight="true"
+                                        android:id="@+id/HomeVid2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:paddingTop="-10dp"
+                                        android:paddingBottom="-10dp"
+                                        android:focusableInTouchMode="false"
+                                        />
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/HomeCardVid3"
+                                    android:layout_width="174dp"
+                                    android:layout_height="136dp"
+                                    android:background="@drawable/clickable"
+                                    app:cardCornerRadius="10dp">
+
+                                    <VideoView
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentRight="true"
+                                        android:id="@+id/HomeVid3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:focusableInTouchMode="false"
+                                        />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <include
+                        android:id="@+id/include1"
+                        layout="@layout/home_top_choices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:visibility="visible" />
+
+                    <include
+                        android:id="@+id/include2"
+                        layout="@layout/home_specials"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

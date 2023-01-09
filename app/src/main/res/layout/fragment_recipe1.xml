@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Recipe1">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+                    <ImageView
+                        android:id="@+id/recipe1_back_btn"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mix TomYam"
+                        android:textSize="30sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/poppins_medium"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="420dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center"
+                    android:background="#C6C6C6"
+                    android:layout_marginTop="5dp"/>
+
+                <include layout="@layout/recipe__video"
+                    android:id="@+id/recipe1_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <include layout="@layout/ingredients" />
+                    <include layout="@layout/recipe_steps"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

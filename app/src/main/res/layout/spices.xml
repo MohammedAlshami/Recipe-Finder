@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ingredients_spices_addition">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="35dp">
+
+
+                <ImageButton
+                    android:id="@+id/ingredient_vege_add1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/black_pepper" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Black Pepper"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:id="@+id/ingredient_vege_add2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/caraway" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Caraway"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="5dp">
+
+                <ImageButton
+                    android:id="@+id/ingredient_vege_add3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cardamom" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Cardamom"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="35dp">
+
+                <ImageButton
+                    android:id="@+id/ingredient_vege_add4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/celery_seed" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Celery Seed"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:id="@+id/ingredient_vege_add5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cinnamon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Cinnamon"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="5dp">
+
+                <ImageButton
+                    android:id="@+id/ingredient_vege_add6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cloves" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Cloves"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="35dp">
+
+            <ImageButton
+                    android:id="@+id/ingredient_vege_add7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cumin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Cumin"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="5dp">
+
+                <ImageButton
+                    android:id="@+id/ingredient_vege_add8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dill_seed" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Dill Seed"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="5dp">
+
+                <ImageButton
+                    android:id="@+id/ingredient_vege_add9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_baseline_add_circle_outline_24"
+                    android:clickable="true"
+                    android:contentDescription="@string/just_a_button"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:foreground="@drawable/ingredient_img_overlay"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dried_herbs" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Dried Herbs"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
