@@ -15,4 +15,4 @@ Recipe Finder is an app that helps users find and discover new recipes based on 
 - Add Halal cousine identification 
 
 ## License:
-[MIT](https://github.com/MohammedAlshami/Recipe-Finder/blob/main/LICENSE.md)
+[MIT](https://github.com/MohammedAlshami/Recipe-Finder/blob/main/LICENSE)
