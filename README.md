@@ -13,7 +13,6 @@ Recipe Finder is an app that helps users find and discover new recipes based on 
 - Add image recognition 
 - Implement a meal planning feature
 - Add support for dietary restrictions and allergies
-- Increase the number of supported cuisines
 - Add Halal cousine identification 
 - Implement an ingredient substitution feature for users with dietary restrictions 
 - Create a recipe sharing feature for users to share their own recipes with the community 
