@@ -1,4 +1,4 @@
-# Recipe Finder Bot
+# Recipe Finder
 
 Recipe Finder is an app that helps users find and discover new recipes based on the ingredients they have on hand. It utilizes advanced image recognition technology to identify the ingredients present in an image and suggests relevant recipes based on those ingredients. It also suggests personalized recipes based on the user's past search history and liked recipes.
 
